@@ -94,7 +94,7 @@ config = {
         mail: {
          transport: 'SMTP',
          options: {
-             service: smtp.sparkpostmail.com,
+             service: process.env.emailService,
              auth: {
                  user: process.env.emailUsername, // mailgun username
                  pass: process.env.emailPassword  // mailgun password
